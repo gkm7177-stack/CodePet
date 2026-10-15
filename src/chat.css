@@ -1755,3 +1755,38 @@ textarea:focus-visible {
 .workspace-change-expiry { display: block; margin: 8px 0; color: var(--ink-muted); }
 .workspace-change-actions { display: flex; gap: 8px; justify-content: flex-end; }
 .workspace-change-status { margin: 8px 0 0; color: var(--ink-soft); font-size: 11px; }
+
+/* ===== 어두운 화면 (예린 개인용 수정) ===== */
+:root {
+  color-scheme: dark;
+  --page: #0e0e10;
+  --sidebar: #131316;
+  --surface: #1a1a1e;
+  --ink: #f4f4f5;
+  --ink-soft: #e4e4e7;
+  --muted: #a1a1aa;
+  --line: #27272a;
+  --line-strong: #3f3f46;
+  --accent: #3f3f46;
+  --accent-soft: #232327;
+  --danger: #f87171;
+  --danger-soft: #2a1515;
+  --shadow: 0 1px 3px rgba(0, 0, 0, 0.4), 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+.button-primary:hover { background: #52525b; }
+.bubble .mention, .bubble a { color: #93c5fd; }
+.message.is-user .bubble .mention { color: #bfdbfe; }
+.message.is-error .bubble { border-color: #5c1d1d; color: #fca5a5; }
+.turn-queue-bar { background: rgba(26, 26, 30, 0.88); }
+.turn-cancel:hover, .reply-preview-clear:hover { color: #fca5a5; }
+.turn-action-danger, .button-danger { border-color: #5c1d1d; color: #fca5a5; }
+.turn-action-danger:hover { color: #fecaca; }
+.button-danger:hover { background: #3a1818; }
+.session-item:not(.is-active) .session-select:hover { background: rgba(255, 255, 255, 0.05); }
+.store-warning, .delivery-badge { background: #241d0c; border-color: #4d3d10; color: #fcd34d; }
+.store-warning.is-error { background: var(--danger-soft); border-bottom-color: #5c1d1d; color: #fca5a5; }
+.popover-status.is-warning, .approval-warning { color: #fbbf24; }
+.code-block { background: #09090b; border-color: var(--line); }
+.code-bar { background: #18181b; }
+.doctor-backdrop, .approval-backdrop { background: rgba(0, 0, 0, 0.6); }
+.message .avatar img { outline-color: rgba(255, 255, 255, 0.1); }
